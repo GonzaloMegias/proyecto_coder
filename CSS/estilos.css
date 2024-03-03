@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Ubuntu&display=swap');
+
+/*reset de valores*/
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; (ya lo tengo en el boostrap)*/
+    /*hace que se respete el tamaño de las cajas y no crezca si le agregamos paddingo border*/
+
+}
+
+body {
+    color: black;
+    font-family: "Roboto", sans-serif;
+    line-height: initial;
+    background-color: rgb(243, 243, 243);
+}
+
+/*header*/
+.header {
+    background-color: #203C66;
+    
+    .contenedorHeader {
+
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+
+
+         }
+
+
+}
+
+/*main*/
+/*.main{*/
+.main {
+
+    .imagenFondoIndex {
+        height: 50vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(../assests/img/img22.jpg);
+
+        .tituloPrincipal {
+            font-size: 2.5rem;
+            font-weight: 300;
+            background-color: rgba(128, 128, 128, 0.397);
+
+        }
+    }
+
+    .contenedorTextoMainIndex {
+        margin-top: 10px;
+
+        /*.tituloPrincipal {
+            font-size: 2.5rem;
+            font-weight: 300;
+        }*/
+
+        .subtituloPrincipal {
+            width: 50%;
+            margin: 0 auto;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            font-size: 1rem;
+        }
+
+        text-align: center;
+
+        .enlaceReservas {
+            margin-top: 20px;
+            display: inline-block;
+            /*para poder modificar los margenes y que siga comportandos{e como elemento en l{inea*/
+            text-decoration: none;
+            /*saco subrayado*/
+            color: white;
+            background-color: #203C66;
+            width: 80px;
+            height: 25px;
+            padding-top: 3px;
+            padding-bottom: 2px;
+            text-align: center;
+            border-radius: 4px;
+
+
+        }
+    }
+
+
+
+
+    .tarjeta {
+        background-color: #afafaf;
+        width: 400px;
+    }
+
+
+    .contenedorGaleria {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        row-gap: 30px;
+        /*gap: Separa filas y columnas las imágenes en este caso como si fueran márgenes. row-grap separa las filas.*/
+
+    }
+
+    .itemGaleria {
+        width: 300px;
+        height: 300px;
+
+        :hover {
+            border: 1px solid white;
+        }
+
+        /*border: 1px solid grey;*/
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            /*border: 1px solid gray;*/
+            border-radius: 9px 9px 9px 9px;
+            box-shadow: 1px 2px 1px -8px rgba(0, 0, 0, 0.71);
+            -webkit-box-shadow: 5px 5px 31px -8px rgba(0, 0, 0, 0.71);
+            -moz-box-shadow: 5px 5px 31px -8px rgba(0, 0, 0, 0.71);
+        }
+    }
+
+
+}
+
+
+
+/*}*/
+
+.footer {
+    background-color: #203C66;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    /*top: 0;*/
+
+    .iconoWsp {
+        position: fixed;
+        right: 10px;
+        bottom: 10px;
+
+        .fa-square-whatsapp {
+            color: rgb(37, 211, 102);
+            font-size: 2rem;
+        }
+
+    }
+
+    .iconoInstagram {
+        position: fixed;
+        right: 10px;
+        bottom: 40px;
+
+        .fa-square-instagram {
+            color: #F56040;
+            font-size: 2rem;
+        }
+    }
+
+    .tituloFooter {
+        margin-bottom: 20px;
+        color: #ffffff;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .contenedorlogosFooter {
+        background-color: #55555528;
+        display: flex;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        /*row-gap: 30px;*/
+        /*flex-wrap: wrap;*/
+        justify-content: center;
+
+        .itemLogosFooter {
+            width: 10%;
+            /*height: 10px;*/
+        }
+    }
+
+
+    .textoFooter {
+        margin-top: 20px;
+        color: #ffffff;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+}

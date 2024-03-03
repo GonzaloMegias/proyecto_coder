@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <!--iconos-->
+    <script src="https://kit.fontawesome.com/f4c79c57e5.js" crossorigin="anonymous"></script>
+    <title>Saigem Airlines</title>
+    <!--favicon-->
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/estilos.css">
+
+</head>
+<body>
+    <header class="header">
+
+        <div class="contenedorHeader">
+
+           <img src="../assests/img/logo.svg" alt="Logo de la empresa">
+           <nav class="navegacion">
+                <ul class="listaNav">
+                    <!--enlaces relativos porque tengo que indicarle donde estoy parado-->
+                    <li><a class="linkItem" href="../index.html">Inicio</a></li>
+                    <li><a class="linkItem" href="./nosotros.html">Nosotros</a></li>
+                    <li><a class="linkItem" href="./galeria.html">Galería</a></li>
+                    <li><a class="linkItem selected" href="#">Reservas</a></li>
+                    <li><a class="linkItem" href="./contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+
+       </div>
+    </header>
+
+    <main class="main">
+        <section class="contenedorTextoMainIndex">
+            <h1 class="tituloPrincipal">Reservas</h1>
+            <!--<h3>Conocé nuestras ofertas y visitá lugares increíbles</h3>-->
+
+        
+
+            <section>
+                 <img src="../assests/img/contacto.png" alt="Imagen de azafata, atenta a tu pedido">
+            </section>
+            <section>
+                <form action="">
+                <h3 class="subtituloPrincipal">Completá los datos y los más pronto posible nos estaremos comunicando para ofrecerte el mejor servicio</h3>
+            
+                     <div>
+                          <label for="name">Nombre:</label>
+                          <input type="text" id="name" name="name" required  placeholder="Ingrese su nombre completo" > <!--palceholder = "Ingrese su nombre"-->   
+                    </div>
+                    <div>
+                         <label for="Email">Email:</label>
+                         <input type="email" name="email" id="email" placeholder="ejemplo@servidor.com" required>
+                    </div>
+                    <div>
+                         <label for="comentario">Comentario</label>
+                         <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="Escriba su comentario"></textarea required>
+                    </div>
+                    <div>
+                         <input type="reset" value="Limpiar">
+                         <input type="submit" value="Confirmar">
+                </div>
+            </form>
+            </section>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+
+        <section>
+            <p class="tituloFooter">Baje nuestra app y facilite sus viajes</p>
+        </section>
+
+
+        <section class="contenedorlogosFooter">
+            <img class="itemLogosFooter" src="../assests/img/logoApple.png" alt="">
+            <img class="itemLogosFooter" src="../assests/img/logoGooglePlay.png" alt="">
+        </section>
+
+        <section>
+
+            <div class="textoFooter">
+
+                <p>© 2024 SAIGEM Airlines – Todos los Derechos Reservados</p>
+                <p>Razón Social: SA aerolíneas SA CUIT: 35-21180000-1</p>
+                <p>Dirección: Av. Rafael Obligado S/N°. ( Av. Costanera), Ciudad de Buenos Aires. CP: 1428</p>
+
+            </div>
+            <!--Enlace absoluto porque es una dirección compelta-->
+            <a class="iconoWsp" href="https://www.whatsapp.com/" target="_blank">
+                <i class="fa-brands fa-square-whatsapp"></i></a>
+            <a class="iconoInstagram" href="https://www.instagram.com/" target="_blank">
+                <i class="fa-brands fa-square-instagram"></i></a>
+        </section>
+    </footer>
+    <script src="../js/bootstrap.bundle.min.js">  </script>
+</body>
+</html>
